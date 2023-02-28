@@ -9,7 +9,23 @@ This plugin was inspired by Lualine and https://nihilistkitten.me/nvim-lua-statu
 Installing should just require you to add this plugin repo to your nvim plugin manager list of plugins then update your plugins and add. To your nvim's init.lua file. Currently there are no setup options but we do plan to add some.
 
 ```lua
-require "kitty-status".setup {
+require ("catstatus.nvim").setup {
 
+}
+```
+
+Or if you would like to customise the colors do so like below 
+
+```lua
+local config = {
+	colors = {
+		normalmode = "#A9DC76",
+		insertmode = "#78DCE8",
+		filename = "#AB9DF2",
+		visualmode = "#f57800",
+		ossymbol = "#ff0000", 
+		replace = "#FF6188",
+		terminal = "#727072",
+	}
 }
 ```
